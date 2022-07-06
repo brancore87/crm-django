@@ -25,7 +25,7 @@ SECRET_KEY = env('SECRET_KEY')
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-ALLOWED_HOSTS = ['159.223.225.105']
+ALLOWED_HOSTS = ['139.59.29.25']
 
 
 # Application definition
