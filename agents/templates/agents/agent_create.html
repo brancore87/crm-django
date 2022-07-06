@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load tailwind_filters %}
+
+
+{% block content %}
+<div class="max-w-lg mx-auto">
+  <h2 class="text-center m-5 text-gray-500 tracking-widest">Create New Agent</h2>
+    <form method="post">
+      {{ form|crispy }}
+      {% csrf_token %}
+      <button type="submit" 
+      class="w-full text-white rounded-md bg-indigo-500 hover:bg-indigo-600 px-3 py-1">
+      Submit
+    </button>
+  </form>
+
+
+{% endblock content %}
