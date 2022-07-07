@@ -25,7 +25,7 @@ SECRET_KEY = env('SECRET_KEY')
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-ALLOWED_HOSTS = ['139.59.29.25']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -134,6 +134,10 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [ 
     BASE_DIR / "static"
 ]
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = "media_root"
+
 STATIC_ROOT = "static_root"
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
