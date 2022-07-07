@@ -14,6 +14,7 @@ django-environ = "*"
 psycopg2-binary = "*"
 whitenoise = "*"
 gunicorn = "*"
+django-tailwind = "*"
 
 [dev-packages]
 
